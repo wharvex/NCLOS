@@ -3,13 +3,13 @@
  */
 package com.wharvex.nclos.app;
 
-import com.wharvex.nclos.list.LinkedList;
-
+import static com.wharvex.nclos.app.MessageUtils.getMessage;
 import static com.wharvex.nclos.utilities.StringUtils.join;
 import static com.wharvex.nclos.utilities.StringUtils.split;
-import static com.wharvex.nclos.app.MessageUtils.getMessage;
 
 import org.apache.commons.text.WordUtils;
+
+import com.wharvex.nclos.list.LinkedList;
 
 public class App {
     public static void main(String[] args) {
