@@ -13,9 +13,14 @@ import com.wharvex.nclos.list.LinkedList;
 
 public class App {
     public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+        Thread.currentThread().setName("mainThread");
+        OutputHelper.debugPrint("BEGIN EXECUTION TRACE");
+        var bl = new Bootloader();
+        bl.init();
+        Scanner sc = new Scanner(System.in);
+        while (!sc.nextLine().equals("x")) {
+        }
+        OutputHelper.debugPrint("END EXECUTION TRACE");
+        System.exit(0);
     }
 }
